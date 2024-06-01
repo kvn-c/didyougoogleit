@@ -3,6 +3,38 @@
 
 <head>
   <meta charset="UTF-8" />
+  <meta property="og:title" content="DYGI">
+  <meta property="og:description" content="Get answers FAST!">
+  <meta property="og:image" content="/apple-touch-icon.png">
+  <meta property="og:url" content="https://didyougoogleit.com">
+  <meta property="og:type" content="website">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="DYGI">
+  <meta property="og:description" content="Get answers FAST!">
+  <meta property="og:image" content="/android-chrome-512x512.png">
+  <meta property="og:url" content="https://didyougoogleit.com">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="DYGI">
+  <meta name="twitter:description" content="Get answers FAST!">
+  <meta name="twitter:image" content="/android-chrome-512x512.png">
+  <meta name="twitter:site" content="@didyougoogleit_">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "DYGI",
+    "description": "Get answers FAST!",
+    "image": "https://didyougoogleit.com/android-chrome-512x512.png",
+    "url": "https://didyougoogleit.com"
+  }
+  </script>
+  
   <meta name="google-adsense-account" content="ca-pub-7999966821583008">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -25,18 +57,18 @@
         <h1 class="hg__text animate__animated animate__fadeIn">did you google it?</h1>
       </div>
       <div class="hi animate__animated animate__fadeInUpBig animate__delay-2s animate__faster">
-        <form id="googleForm" action="https://www.google.com/search?q=" role="search">
+        <form id="googleForm" action="https://www.google.com/search?q=" role="search" name="searchForm" novalidate autocomplete="on">
           <div class="b-input">
-            <input type="text" name="q" id="searchInput" placeholder="how do I…">
+            <input type="search" role="search" aria-label="Search" name="q" id="searchInput" placeholder="how do I…">
           </div>
-          <button type="submit" id="searchButton">
+          <button type="submit" role=button aria-label="Search Google.com" id="searchButton">
             <span class="material-icons">search</span>
           </button>
         </form>
       </div>
     </section>
     <footer>
-      <p>©<a href="https://www.linkedin.com/in/kevin-cornett-74639839" target="_blank"
+      <p>©<a href="https://www.linkedin.com/in/kevin-cornett-74639839" target="_blank" title="Go to kevin-c's LinkedIn" rel="noopener noreferrer" aria-label="Go to kevin-c's LinkedIn"
           class="footer-link">kevin-c</a> | didyougoogleit.com is an independent website and is not affiliated with, endorsed by, or sponsored by Google Inc.</p>
     </footer>
     <!-- end hero -->
